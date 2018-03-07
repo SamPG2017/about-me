@@ -1,5 +1,6 @@
 body {
-  background-color: rgb(61, 40, 2);
+  background-color: rgb(126, 204, 214);
+  font: "helvetica";
   /*background-image: href="/Day-2/Chocolate_Bar.jpg";*/
 }
 
@@ -16,7 +17,7 @@ body {
 */
 
 h1 {
-  color: white;
+  color: rgb(0, 0, 0);
   font-size: 36px;
   text-align: center;
 }
@@ -24,6 +25,10 @@ h1 {
 h2 {
   color: rgb(61, 40, 2);
   font-size: 40px;
+}
+
+ol {
+  list-style-type: decimal;
 }
 
 /*<body background="URL">
