@@ -1,6 +1,6 @@
 body {
   background-color: rgb(61, 40, 2);
-  background-image: image(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRC1V2lULYt-qpdfmmzT9yFnjS-wIx8mBtfbohr-MzSPGUd2ufB)
+  /*background-image: href="/Day-2/Chocolate_Bar.jpg";*/
 }
 
 /*
@@ -14,10 +14,16 @@ body {
 	}
 
 */
+
 h1 {
   color: white;
   font-size: 36px;
   text-align: center;
+}
+
+h2 {
+  color: rgb(61, 40, 2);
+  font-size: 40px;
 }
 
 /*<body background="URL">
