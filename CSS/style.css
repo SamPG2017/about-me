@@ -1,7 +1,37 @@
 body {
-  background-color: rgb(30, 91, 148);
+  background-color: rgb(61, 40, 2);
+  background-image: image(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRC1V2lULYt-qpdfmmzT9yFnjS-wIx8mBtfbohr-MzSPGUd2ufB)
 }
 
+/*
+body { 
+	font: 75% georgia, sans-serif;
+	line-height: 1.88889;
+	color: #555753; 
+	background: #fff url(http://csszengarden.com/001/blossoms.jpg) no-repeat bottom right; 
+	margin: 0; 
+	padding: 0;
+	}
+
+*/
 h1 {
   color: white;
+  font-size: 36px;
+  text-align: center;
 }
+
+/*<body background="URL">
+URL	The URL of the background image.
+Possible values:
+
+An absolute URL - points to another web site (like href="http://www.example.com/bgimage.gif")
+A relative URL - points to a file within a web site (like href="/images/bgimage.gif")
+
+/*
+https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRC1V2lULYt-qpdfmmzT9yFnjS-wIx8mBtfbohr-MzSPGUd2ufB
+ 
+/*
+Clipart Chocolate #138971
+mzayat.com
+Chocolate free to use clip art
+*/
