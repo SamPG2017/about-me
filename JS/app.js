@@ -13,19 +13,20 @@ if(some condition is met) {
 }
 */
 
-
+/* First test for functionality
 var test1 = prompt('do you see this');
 console.log ("Test 1 answer is " + test1);
+*/
 
-/*
 var containTheobromine = prompt('Does chocolate contain theobromine?').toLowerCase();
-if (containTheobromine === 'yes' || 'Y' || "Yes") {
+if (containTheobromine === 'yes') {
   alert('That is correct !');
 } else {
   alert('It actually does. =D');
 }
   console.log ("You answered " + containTheobromine + " when I asked if chocolate contained theobromine.")
 
+/*  
 var rubyChocolate = prompt('Is there such a thing as ruby chocolate ?').toLowerCase();
 if (rubyChocolate === 'yes' || 'Y' || "Yes") {
   alert('That is correct !');
@@ -58,3 +59,4 @@ if (tiredOfChocolate === 'yes' || 'Y' || "Yes") {
 }
 console.log ("You answered " + containTheobromine + " when I asked if chocolate contained theobromine.")
 */
+
