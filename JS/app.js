@@ -18,6 +18,15 @@ var test1 = prompt('do you see this');
 console.log ("Test 1 answer is " + test1);
 */
 
+var correctlyAnswer = prompt('Will you answer yes or no only ?')
+if (correctlyAnswer === 'yes') {
+  alert('Great !  Let\'s play !');
+} else {
+  alert('You are making my coding life very difficult, but we\'ll try anyhow');
+}
+  console.log ("You answered " + correctlyAnswer + " when I asked if you would answer with yes or no.")
+
+
 var containTheobromine = prompt('Does chocolate contain theobromine?').toLowerCase();
 if (containTheobromine === 'yes') {
   alert('That is correct !');
