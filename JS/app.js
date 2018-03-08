@@ -1,24 +1,7 @@
 'use strict';
 
-// IF/ELSE
-
-// PSEUDOCODE
-/*
-if(some condition is met) {
-  do this
-} else if {
-  do something different
-} else {
-  do a third thing
-}
-*/
-
-/* First test for functionality
-var test1 = prompt('do you see this');
-console.log ("Test 1 answer is " + test1);
-*/
-
-var correctlyAnswer = prompt('Will you answer yes or no only ?')
+// Start of game
+var correctlyAnswer = prompt('Will you answer yes or no only ?').toLowerCase();
 if (correctlyAnswer === 'yes') {
   alert('Great !  Let\'s play !');
 } else if (correctlyAnswer === 'no') {
@@ -26,104 +9,135 @@ if (correctlyAnswer === 'yes') {
 } else {
   alert('I don\'t understand your answer. Sorry.  Onwards !');
 } 
-  console.log ("You answered " + correctlyAnswer + " when I asked if you would answer with yes or no.")
+console.log ('You answered ' + correctlyAnswer + ' when I asked if you would answer with yes or no.');
 
 
-var containTheobromine = prompt('Does chocolate contain theobromine?').toLowerCase();
-if (containTheobromine === 'yes') {
+// Game question Q1
+var eyeColor = prompt('Do I have brown eyes ?').toLowerCase();
+if (eyeColor === 'yes') {
   alert('That is correct !');
-} else if (containTheobromine === 'no') {
-  alert('It actually does. =D');
+} else if (eyeColor === 'no') {
+  alert('But, but - I can <see> them !  They\'re brown ! =D');
 } else {
     alert('I don\'t understand your answer. Sorry.  Onwards !');
   } 
 
-  console.log ("You answered " + containTheobromine + " when I asked if chocolate contained theobromine.")
+  console.log ('You answered ' + eyeColor + ' when I asked if my eyes were brown.');
 
+// Game question Q2
+  var petsYN = prompt('Do I have any pets ?').toLowerCase();
+  if (petsYN === 'yes') {
+    alert('That is correct !');
+  } else if (petsYN === 'no') {
+    alert('We actually have four.  Two dogs, two kittehs.');
+  } else {
+      alert('I don\'t understand your answer. Sorry.  Onwards !');
+    } 
+  
+    console.log ('You answered ' + petsYN + ' when I asked if I had pets.');
 
-var rubyChocolate = prompt('Is there such a thing as ruby chocolate ?').toLowerCase();
-if (rubyChocolate === 'yes') {
-  alert('That is correct !');
-} else if (rubyChocolate === 'no') {
-  alert('It\'s very new and proprietary.');
+// Game question Q3
+ var seattleiteYN = prompt('Do I live in Seattle proper or suburbs ?').toLowerCase();
+ if (seattleiteYN === 'yes') {
+   alert('Sorry - that\'s incorrect - we live in the South Sound.');
+ } else if (seattleiteYN === 'no') {
+   alert('That is correct !');
+ } else {
+     alert('I don\'t understand your answer. Sorry.  Onwards !');
+   } 
+ 
+   console.log ('You answered ' + seattleiteYN + ' when I asked if I lived in Seattle or its suburbs.');
+
+// Game question Q4
+ var seattleNativeYN = prompt('Am I a Seattle native ?').toLowerCase();
+ if (seattleNativeYN === 'yes') {
+   alert('Sorry - that\'s incorrect - I\'m originally from West Texas.');
+ } else if (seattleNativeYN === 'no') {
+   alert('That is correct !');
+ } else {
+     alert('I don\'t understand your answer. Sorry.  Onwards !');
+   } 
+ 
+   console.log ('You answered ' + seattleNativeYN + ' when I asked if I was a Seattle native.');
+
+// Game question Q5
+var crazyCF = prompt('Am I crazy for thinking I could finish this bootcamp ?').toLowerCase();
+if (crazyCF === 'yes') {
+  alert('Maaaayyyyybbbbbe !');
+} else if (crazyCF === 'no') {
+  alert('Oh.  I think I might be.');
 } else {
-  alert('I don\'t understand your answer. Sorry.  Onwards !');
+    alert('I don\'t understand your answer. Sorry.  Onwards !');
+  } 
+
+  console.log ('You answered ' + crazyCF + ' when I asked if I am crazy for thinking I can do this bootcamp.');
+
+// Game question Q6
+var favNum = 4;
+var endGameNum = 4;
+
+var numOfGuesses = 4;
+var i;
+var doesThisMatch = false
+
+// Setting up a for loop
+// Corrected the option order to break when correct number is chosen
+
+for (i = 1; i <= numOfGuesses && doesThisMatch != true; i++) {
+  var favNumGuess = prompt('What is my favorite number ?');  
+
+  if (favNumGuess > favNum) {
+    alert('Sorry - too high !  Try again.');
+  }  else if (favNumGuess < favNum) {
+    alert('Sorry - too low !  Try again.');
+  }  else if (favNumGuess != favNum) {
+    alert('Sorry - this game requires a number.  Try again.');
+  } else {
+    doesThisMatch = true;
+    alert('That is correct !  Good job !');
+  }
+    console.log('Number of Guesses ' + i)
+    console.log('You said ' + favNumGuess + ' was my favorite number.');
 } 
+                            
+// Game question Q7 - six favorite movies
+                            
+var favMovies = ['Die Hard', 'Despicable Me', 'Serenity', 'The Blind Side', 'The Usual Suspects', 'Iron Man']; //.toLowerCase
+console.log('Favorite Movies: ' + favMovies);
+var favMoviesString = favMovies.toString();
+var favMoviesLowerString = favMoviesString.toLowerCase();
+var favMoviesLower = favMoviesString.split(",");
+console.log('Favorite Movies lower case: ' + favMoviesString);
 
-  console.log ("You answered " + containTheobromine + " when I asked if ruby chocolate exists.")
+var maxGuesses = 6; 
+var doesThisMovieMatch = false;
+var correctGuess = 0;
+var correctAnswer = '';
 
-var labsOfChocolate = prompt ('Are chocolate labs made of cocoa ?').toLowerCase();
-if (labsOfChocolate === 'no') {
-  alert('That is correct !');
-} else if (labsOfChocolate === 'yes') {
-  alert('I hope not !  Chocolate is bad for dogs !');
-}  else {
-  alert('I don\'t understand your answer. Sorry.  Onwards !');
-} 
+// Set up a for loop
+// Set up option order to break when correct number is chosen
 
-  console.log ("You answered " + containTheobromine + " when I asked if chocolate labs are made of cocoa.")
+var userName = prompt('Hey -- what\'s your name ?');
 
-var marsCandy = prompt ('Are M\&M\'s actually from Mars ?').toLowerCase();
-if (marsCandy === 'yes') {
-  alert('That is correct - the Mars family makes them.');
-} else if (marsCandy === 'no') {
-  alert('Well. . . sort of. . .');
-} else {
-  alert('I don\'t understand your answer. Sorry.  Onwards !');
-} 
-  console.log ("You answered " + containTheobromine + " when I asked if M\&M\'s are actually from Mars.")
-
-var tiredOfChocolate = prompt('Are you tired of all these chocolate questions ?').toLowerCase();
-if (tiredOfChocolate === 'yes') {
-  alert('Awww.  I\'m not !');
-} else if (tiredOfChocolate === 'no') {
-  alert('Me, neither !');
-} else {
-  alert('I don\'t understand your answer. Sorry.  Onwards !');
-} 
-
-console.log ("You answered " + containTheobromine + " when I asked if you were tired of chocolate questions.")
-
-/* -- Set up another set of questions to test alternate answers for functionality
-var containTheobromine = prompt('Does chocolate contain theobromine?').toLowerCase();
-if (containTheobromine === 'yes') {
-  alert('That is correct !');
-} else {
-  alert('It actually does. =D');
+for (var i = 0; i < maxGuesses; i++) {
+  var favMovieGuess = prompt('What is one of my favorite movies ?').toLowerCase();
+  console.log('Favorite movie guess: ' + favMovieGuess);
+  
+  for (var index = 0; index < favMovies.length && doesThisMovieMatch != true; index++) {
+    if (favMovieGuess == favMovies[index].toLowerCase()) {
+      doesThisMovieMatch = true;
+      correctGuess++;
+      correctAnswer += '\n' + favMovieGuess;
+      alert('That is correct !  Good job !');
+    } 
+  }
+  if (doesThisMovieMatch === false) {
+    alert('Sorry - not my favorite !  Try again.');
+  }
+  doesThisMovieMatch = false; 
+  console.log('Number of Guesses ' + i)
+  console.log('You guessed ' + favMovieGuess + ' was one of my favorite movies !');  
 }
-  console.log ("You answered " + containTheobromine + " when I asked if chocolate contained theobromine.")
 
-
-var rubyChocolate = prompt('Is there such a thing as ruby chocolate ?').toLowerCase();
-if (rubyChocolate === 'yes') {
-  alert('That is correct !');
-} else {
-  alert('It\'s very new and proprietary.');
-}
-  console.log ("You answered " + containTheobromine + " when I asked if ruby chocolate exists.")
-
-var labsOfChocolate = prompt ('Are chocolate labs made of cocoa ?').toLowerCase();
-if (labsOfChocolate === 'no') {
-  alert('That is correct !');
-} else {
-  alert('I hope not !  Chocolate is bad for dogs !');
-}
-  console.log ("You answered " + containTheobromine + " when I asked if chocolate labs are made of cocoa.")
-
-var marsCandy = prompt ('Are M\&M\'s actually from Mars ?').toLowerCase();
-if (marsCandy === 'yes') {
-  alert('That is correct - the Mars family makes them.');
-} else {
-  alert('Well. . . sort of. . .');
-}
-  console.log ("You answered " + containTheobromine + " when I asked if M\&M\'s are actually from Mars.")
-
-var tiredOfChocolate = prompt('Are you tired of all these chocolate questions ?').toLowerCase();
-if (tiredOfChocolate === 'yes') {
-  alert('Awww.  I\'m not !');
-} else {
-  alert('Me, neither !');
-}
-console.log ("You answered " + containTheobromine + " when I asked if you were tired of chocolate questions.")
-*/
+  alert('Number of correct guesses for ' + userName + ': ' + correctGuess + '\n' + '\n' + 'These are all your correct answers: ' + correctAnswer);
 

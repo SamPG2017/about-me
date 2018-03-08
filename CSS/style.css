@@ -1,25 +1,28 @@
 body {
   background-color: rgb(126, 204, 214);
   font: "helvetica";
-  /*background-image: href="/Day-2/Chocolate_Bar.jpg";*/
+  padding: 25 25 25 25;
 }
 
-/*
-body { 
-	font: 75% georgia, sans-serif;
-	line-height: 1.88889;
-	color: #555753; 
-	background: #fff url(http://csszengarden.com/001/blossoms.jpg) no-repeat bottom right; 
-	margin: 0; 
-	padding: 0;
-	}
+div {
+  border: 3px solid rgb(126, 204, 214);
+  margin: 0 0 0 50;
+  padding: 0 0 0 50;
+  height: 50px;
+}
 
-*/
+section {
+  border: 2px solid blue;
+  margin: 0 0 0 50;
+  padding: 0 0 0 50;
+}
 
 h1 {
   color: rgb(0, 0, 0);
   font-size: 36px;
   text-align: center;
+  margin: 2 5;
+  padding: 2 5 2 5;
 }
 
 h2 {
@@ -27,8 +30,30 @@ h2 {
   font-size: 40px;
 }
 
+h3 {
+  color: rgb(20, 20, 19);
+  font-size: 22px;
+}
+
+h4 {
+  color: rgb(24, 23, 21);
+  font-size: 18px;
+}
+
+/*
 ol {
   list-style-type: decimal;
+}
+*/
+
+ol {
+  list-style-type: decimal;
+  column-count: 2;         /* Found option on StackOverflow */
+  margin: 0 50 0 50;
+}
+
+ul {
+  column-count: 2;
 }
 
 /*<body background="URL">
